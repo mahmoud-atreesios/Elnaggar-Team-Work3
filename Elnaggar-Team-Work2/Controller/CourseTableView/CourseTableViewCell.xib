@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -29,79 +29,99 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5E-5z-Xz9">
+                        <rect key="frame" x="20" y="259.33333333333331" width="411" height="62.666666666666686"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ3-01-SJn">
+                        <rect key="frame" x="20" y="259.33333333333331" width="411" height="62.666666666666686"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="readMoreBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6er-9n-xh2"/>
+                        </connections>
+                    </button>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="rHn-iW-l91">
-                        <rect key="frame" x="236" y="246.99999999999997" width="200" height="34.666666666666657"/>
+                        <rect key="frame" x="231" y="215" width="200" height="34.333333333333343"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vho-hG-E7f">
-                                <rect key="frame" x="0.0" y="0.0" width="52" height="34.666666666666664"/>
+                                <rect key="frame" x="0.0" y="0.0" width="52" height="34.333333333333336"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ratingStarsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lkV-F8-6Zs"/>
+                                    <action selector="starOneBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SNn-2O-BpZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXZ-OA-Ycp">
-                                <rect key="frame" x="37" y="0.0" width="52" height="34.666666666666664"/>
+                                <rect key="frame" x="37" y="0.0" width="52" height="34.333333333333336"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ratingStarsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EQU-Sq-TB2"/>
+                                    <action selector="starTwoBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="B8E-Rv-w54"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-hJ-mTt">
-                                <rect key="frame" x="74" y="0.0" width="52" height="34.666666666666664"/>
+                                <rect key="frame" x="74" y="0.0" width="52" height="34.333333333333336"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ratingStarsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XPH-o0-sz2"/>
+                                    <action selector="starThreeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6Od-FX-yJL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5t-0W-hUX">
-                                <rect key="frame" x="111" y="0.0" width="52" height="34.666666666666664"/>
+                                <rect key="frame" x="111" y="0.0" width="52" height="34.333333333333336"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ratingStarsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aTE-eD-ibE"/>
+                                    <action selector="starFourBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="e7z-xv-pPW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYl-B5-Lv9">
-                                <rect key="frame" x="148" y="0.0" width="52" height="34.666666666666664"/>
+                                <rect key="frame" x="148" y="0.0" width="52" height="34.333333333333336"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ratingStarsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hvm-4G-Lp6"/>
+                                    <action selector="starFiveBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="clg-d3-g3z"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34.329999999999998" id="9PJ-AT-p6g"/>
+                        </constraints>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5E-5z-Xz9">
-                        <rect key="frame" x="20" y="301.66666666666669" width="411" height="20.333333333333314"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="rHn-iW-l91" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="5" id="5o9-Xm-439"/>
+                    <constraint firstAttribute="bottom" secondItem="x5E-5z-Xz9" secondAttribute="bottom" constant="20" id="0i2-31-dn2"/>
+                    <constraint firstItem="rHn-iW-l91" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="6CX-xs-W0F"/>
+                    <constraint firstAttribute="trailing" secondItem="x5E-5z-Xz9" secondAttribute="trailing" constant="20" id="8dp-Kt-KhP"/>
                     <constraint firstItem="gAQ-eK-I3g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9K3-wx-Fjf"/>
-                    <constraint firstItem="x5E-5z-Xz9" firstAttribute="top" secondItem="rHn-iW-l91" secondAttribute="bottom" constant="20" id="BLo-Wb-luU"/>
-                    <constraint firstAttribute="trailing" secondItem="x5E-5z-Xz9" secondAttribute="trailing" constant="20" id="DY7-uH-F3q"/>
+                    <constraint firstItem="ZQ3-01-SJn" firstAttribute="top" secondItem="rHn-iW-l91" secondAttribute="bottom" constant="10" id="BQE-lv-Xad"/>
                     <constraint firstItem="P3a-w3-PCT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="FoK-ri-Wq6"/>
-                    <constraint firstItem="x5E-5z-Xz9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="TEe-TL-ozA"/>
+                    <constraint firstItem="rHn-iW-l91" firstAttribute="top" secondItem="gAQ-eK-I3g" secondAttribute="bottom" constant="38" id="JRi-fh-PYF"/>
+                    <constraint firstAttribute="bottom" secondItem="ZQ3-01-SJn" secondAttribute="bottom" constant="20" id="Mkj-u5-dCo"/>
+                    <constraint firstItem="ZQ3-01-SJn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="NRY-FM-koD"/>
                     <constraint firstAttribute="trailing" secondItem="gAQ-eK-I3g" secondAttribute="trailing" id="bio-SQ-Kid"/>
                     <constraint firstItem="gAQ-eK-I3g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dkw-uB-8Dm"/>
-                    <constraint firstAttribute="bottom" secondItem="x5E-5z-Xz9" secondAttribute="bottom" constant="20" id="gI8-pC-uvx"/>
-                    <constraint firstItem="rHn-iW-l91" firstAttribute="top" secondItem="gAQ-eK-I3g" secondAttribute="bottom" constant="70" id="k7K-Jz-Njm"/>
+                    <constraint firstItem="x5E-5z-Xz9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hnM-qA-bhG"/>
+                    <constraint firstAttribute="trailing" secondItem="ZQ3-01-SJn" secondAttribute="trailing" constant="20" id="kcD-0P-xG9"/>
+                    <constraint firstItem="x5E-5z-Xz9" firstAttribute="top" secondItem="rHn-iW-l91" secondAttribute="bottom" constant="10" id="tAG-O6-n6j"/>
                     <constraint firstItem="P3a-w3-PCT" firstAttribute="top" secondItem="gAQ-eK-I3g" secondAttribute="bottom" constant="40" id="uVS-19-Lzl"/>
                 </constraints>
             </tableViewCellContentView>

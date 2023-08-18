@@ -27,6 +27,7 @@ extension CourseViewController: UITableViewDataSource, UITableViewDelegate {
         cell.courseImage.image = UIImage(named: courseDataArray[indexPath.row].image)
         cell.courseNameLabel.text = courseDataArray[indexPath.row].name
         cell.courseDescriptionLabel.text = courseDataArray[indexPath.row].description
+        cell.tableView = tableView
         return cell
     }
 }
