@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KME-wa-2Af">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KME-wa-2Af">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--LoginVC-->
         <scene sceneID="bzE-Km-rU6">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="NwE-k9-EBZ" customClass="LoginVC" customModule="Elnaggar_Team_Work" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="NwE-k9-EBZ" customClass="LoginVC" customModule="Elnaggar_Team_Work2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeC-pG-8Dy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +233,7 @@
         <!--SecondVC-->
         <scene sceneID="JmF-Mr-i0L">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="fuC-x2-zKn" customClass="SecondVC" customModule="Elnaggar_Team_Work" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="fuC-x2-zKn" customClass="SecondVC" customModule="Elnaggar_Team_Work2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EgY-yP-xDT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +254,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w05-sX-cIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2611" y="4"/>
+            <point key="canvasLocation" x="3909" y="4"/>
+        </scene>
+        <!--Course View Controller-->
+        <scene sceneID="eX1-G5-j0U">
+            <objects>
+                <viewController storyboardIdentifier="CourseViewController" id="gpT-k7-ss3" customClass="CourseViewController" customModule="Elnaggar_Team_Work2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MpO-5H-9Xa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77G-Z9-UE8">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPT-L3-VGF">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZK3-zS-ztf">
+                                                <rect key="frame" x="0.0" y="250" width="393" height="560"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CourseCellTableViewCell" id="qM2-kf-6Bd" customClass="CourseTableViewCell" customModule="Elnaggar_Team_Work2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qM2-kf-6Bd" id="aRv-TF-deD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="gpT-k7-ss3" id="uN4-Lh-tB1"/>
+                                                    <outlet property="delegate" destination="gpT-k7-ss3" id="Z6t-oI-pOC"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ZK3-zS-ztf" secondAttribute="bottom" constant="42" id="9lB-IB-qSN"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZK3-zS-ztf" secondAttribute="trailing" id="ALc-u8-d43"/>
+                                            <constraint firstItem="ZK3-zS-ztf" firstAttribute="top" secondItem="pPT-L3-VGF" secondAttribute="top" constant="250" id="T3E-lG-5jJ"/>
+                                            <constraint firstItem="ZK3-zS-ztf" firstAttribute="leading" secondItem="pPT-L3-VGF" secondAttribute="leading" id="kyc-vI-AqF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pPT-L3-VGF" firstAttribute="top" secondItem="77G-Z9-UE8" secondAttribute="top" id="CBB-PI-Tr3"/>
+                                    <constraint firstAttribute="trailing" secondItem="pPT-L3-VGF" secondAttribute="trailing" id="Cd7-Dm-Sak"/>
+                                    <constraint firstAttribute="bottom" secondItem="pPT-L3-VGF" secondAttribute="bottom" id="QXo-dW-HyX"/>
+                                    <constraint firstItem="pPT-L3-VGF" firstAttribute="leading" secondItem="77G-Z9-UE8" secondAttribute="leading" id="TRT-ka-pH7"/>
+                                    <constraint firstItem="pPT-L3-VGF" firstAttribute="width" secondItem="77G-Z9-UE8" secondAttribute="width" id="XZC-rT-Iu9"/>
+                                    <constraint firstItem="pPT-L3-VGF" firstAttribute="height" secondItem="77G-Z9-UE8" secondAttribute="height" priority="250" id="hkM-zS-4F0"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="iXY-sS-gGS"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Vh5-RZ-PMM"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LcS-zm-IHp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LcS-zm-IHp" firstAttribute="trailing" secondItem="77G-Z9-UE8" secondAttribute="trailing" id="Lj6-Tp-5EI"/>
+                            <constraint firstItem="77G-Z9-UE8" firstAttribute="leading" secondItem="LcS-zm-IHp" secondAttribute="leading" id="NxR-9b-I3N"/>
+                            <constraint firstItem="77G-Z9-UE8" firstAttribute="bottom" secondItem="LcS-zm-IHp" secondAttribute="bottom" constant="34" id="X23-Oc-RVf"/>
+                            <constraint firstItem="LcS-zm-IHp" firstAttribute="top" secondItem="77G-Z9-UE8" secondAttribute="top" constant="59" id="nqt-X0-JLU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coursesTableView" destination="ZK3-zS-ztf" id="mxt-3h-wee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDu-6q-HFZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2814.5038167938928" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>

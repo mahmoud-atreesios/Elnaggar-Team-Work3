@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setSecondScreenToBeRoot(){
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let tableViewScreen = sb.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC
+        let tableViewScreen = sb.instantiateViewController(withIdentifier: "CourseViewController") as? CourseViewController
         self.window?.rootViewController = UINavigationController(rootViewController: tableViewScreen!)
     }
     

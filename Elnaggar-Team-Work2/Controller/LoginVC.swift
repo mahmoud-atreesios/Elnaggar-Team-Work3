@@ -70,7 +70,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         checkCredentials(email: usernameTextField.text, password: passwordTextField.text)
         
-        let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as! SecondVC
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: "CourseViewController") as! CourseViewController
         navigationController?.pushViewController(secondVC, animated: true)
         UserDefaultsManager.shared().setIsLoggedIn(true)
     }

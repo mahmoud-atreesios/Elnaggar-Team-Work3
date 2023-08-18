@@ -18,6 +18,10 @@
 		1CDBD86B2A8EBD5800CF434A /* String+Trimm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBD86A2A8EBD5800CF434A /* String+Trimm.swift */; };
 		1CDBD86D2A8EBD6100CF434A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBD86C2A8EBD6100CF434A /* Alert.swift */; };
 		1CDBD86F2A8EBDF500CF434A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBD86E2A8EBDF500CF434A /* Constants.swift */; };
+		AB6EDE722A8F940D003302C3 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EDE712A8F940D003302C3 /* CourseViewController.swift */; };
+		AB6EDE752A8F946D003302C3 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EDE732A8F946D003302C3 /* CourseTableViewCell.swift */; };
+		AB6EDE762A8F946D003302C3 /* CourseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6EDE742A8F946D003302C3 /* CourseTableViewCell.xib */; };
+		AB6EDE782A8F952D003302C3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EDE772A8F952D003302C3 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		1CDBD86A2A8EBD5800CF434A /* String+Trimm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trimm.swift"; sourceTree = "<group>"; };
 		1CDBD86C2A8EBD6100CF434A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		1CDBD86E2A8EBDF500CF434A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB6EDE712A8F940D003302C3 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		AB6EDE732A8F946D003302C3 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		AB6EDE742A8F946D003302C3 /* CourseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseTableViewCell.xib; sourceTree = "<group>"; };
+		AB6EDE772A8F952D003302C3 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 			children = (
 				1CDBD8622A8EBD0F00CF434A /* ValidationManager.swift */,
 				1CDBD8642A8EBD2500CF434A /* UserDefaultManager.swift */,
+				AB6EDE772A8F952D003302C3 /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +108,7 @@
 		1CDBD8722A8EBE0A00CF434A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AB6EDE702A8F93E0003302C3 /* CourseTableView */,
 				1CDBD8662A8EBD3500CF434A /* LoginVC.swift */,
 				1CDBD8682A8EBD4200CF434A /* SecondVC.swift */,
 			);
@@ -112,6 +122,16 @@
 				1CDBD86C2A8EBD6100CF434A /* Alert.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AB6EDE702A8F93E0003302C3 /* CourseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AB6EDE712A8F940D003302C3 /* CourseViewController.swift */,
+				AB6EDE732A8F946D003302C3 /* CourseTableViewCell.swift */,
+				AB6EDE742A8F946D003302C3 /* CourseTableViewCell.xib */,
+			);
+			path = CourseTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6EDE762A8F946D003302C3 /* CourseTableViewCell.xib in Resources */,
 				1CDBD85B2A8EBC4800CF434A /* LaunchScreen.storyboard in Resources */,
 				1CDBD8582A8EBC4800CF434A /* Assets.xcassets in Resources */,
 				1CDBD8562A8EBC4600CF434A /* Main.storyboard in Resources */,
@@ -186,8 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDBD86D2A8EBD6100CF434A /* Alert.swift in Sources */,
+				AB6EDE782A8F952D003302C3 /* Course.swift in Sources */,
 				1CDBD86B2A8EBD5800CF434A /* String+Trimm.swift in Sources */,
+				AB6EDE722A8F940D003302C3 /* CourseViewController.swift in Sources */,
 				1CDBD8632A8EBD0F00CF434A /* ValidationManager.swift in Sources */,
+				AB6EDE752A8F946D003302C3 /* CourseTableViewCell.swift in Sources */,
 				1CDBD8672A8EBD3500CF434A /* LoginVC.swift in Sources */,
 				1CDBD8692A8EBD4200CF434A /* SecondVC.swift in Sources */,
 				1CDBD86F2A8EBDF500CF434A /* Constants.swift in Sources */,
